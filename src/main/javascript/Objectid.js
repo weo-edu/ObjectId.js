@@ -16,12 +16,14 @@
  * Javascript class that mimics how WCF serializes a object of type MongoDB.Bson.ObjectId
  * and converts between that format and the standard 24 character representation.
 */
+var supportsLocalstorage = require('supports-localstorage');
+
 var ObjectId = (function () {
     var increment = 0;
     var pid = Math.floor(Math.random() * (32767));
     var machine = Math.floor(Math.random() * (16777216));
 
-    if (typeof (localStorage) != 'undefined') {
+    if (supportsLocalstorage()) {
         var mongoMachineId = parseInt(localStorage['mongoMachineId']);
         if (mongoMachineId >= 0 && mongoMachineId <= 16777215) {
             machine = Math.floor(localStorage['mongoMachineId']);

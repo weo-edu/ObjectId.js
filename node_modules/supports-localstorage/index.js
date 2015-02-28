@@ -21,5 +21,5 @@ module.exports = function() {
       memo = false;
   }
 
-  return false;
+  return memo;
 };

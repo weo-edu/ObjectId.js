@@ -8,7 +8,6 @@ module.exports = function() {
   // is invariant once we are in a particular environment
   if(memo === undefined) {
     var storage = window[storageName];
-
     if(storage) {
       try {
         storage.setItem(testKey, true);

@@ -37,7 +37,7 @@ var ObjectId = (function () {
         for (var i in cookieList) {
             var cookie = cookieList[i].split('=');
             if (cookie[0] == 'mongoMachineId' && cookie[1] >= 0 && cookie[1] <= 16777215) {
-                machine = cookie[1];
+                machine = Math.floor(cookie[1]);
                 break;
             }
         }

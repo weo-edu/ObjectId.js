@@ -21,6 +21,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "supports-localstorage": "^1.0.3"
+    "supports-localstorage": "^1.0.5"
   }
 }

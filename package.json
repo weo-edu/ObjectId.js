@@ -1,6 +1,6 @@
 {
   "name": "objectid-browser",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Jonathan Häberle <jonathan.haeberle@gmail.com>",
   "description": "A browser implementation of MongoDB's ObjectId for browserify",
   "contributors": [
